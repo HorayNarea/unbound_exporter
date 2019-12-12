@@ -16,12 +16,6 @@ COPY --from=build /go/bin/* /
 
 VOLUME /certs
 
-CMD [ \
-  "/unbound_exporter", \
-    "-unbound.host", "$UNBOUND_HOST", \
-    "-unbound.ca", "$UNBOUND_CA", \
-    "-unbound.cert", "$UNBOUND_CERT", \
-    "-unbound.key", "$UNBOUND_KEY" \
-]
+CMD [ "/unbound_exporter", "-unbound.host", "$UNBOUND_HOST" ]
 
 EXPOSE 9167/tcp
