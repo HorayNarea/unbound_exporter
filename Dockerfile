@@ -8,7 +8,7 @@ RUN apk add --no-cache \
   git
 
 RUN go get -v -d github.com/kumina/unbound_exporter
-RUN go install -v github.com/kumina/unbound_exporter
+RUN go install -v github.com/kumina/unbound_exporter@latest
 
 
 FROM scratch
