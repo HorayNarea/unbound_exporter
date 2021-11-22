@@ -7,8 +7,7 @@ RUN apk add --no-cache \
   ca-certificates \
   git
 
-RUN go get -v -d github.com/kumina/unbound_exporter
-RUN go install -v github.com/kumina/unbound_exporter@latest
+RUN go install -v github.com/letsencrypt/unbound_exporter@latest
 
 
 FROM scratch
