@@ -1,5 +1,5 @@
 FROM golang:alpine AS build
-LABEL maintainer "Thomas Sänger <thomas@gecko.space>"
+LABEL maintainer="Thomas Sänger <thomas@gecko.space>"
 
 ENV CGO_ENABLED=0
 
